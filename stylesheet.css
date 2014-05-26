@@ -1,0 +1,296 @@
+@font-face
+{
+	font-family: myriad;
+	src: url(myriad-pro/MYRIADPRO-REGULAR.otf);
+
+}
+@font-face
+{
+	font-family: myriadBold;
+	src: url(myriad-pro/MYRIADPRO-BOLD.otf);
+
+}
+@font-face
+{
+	font-family: opensans;
+	src: url(open-sans/OpenSans-Light.ttf)
+}
+@font-face
+{
+	font-family: opensansreg;
+	src: url(open-sans/OpenSans-Regular.ttf)
+}
+@font-face
+{
+	font-family: opensansbold;
+	src: url(open-sans/OpenSans-Bold.ttf)
+}
+@font-face
+{
+	font-family: simplifica;
+	src: url(open-sans/OpenSans-Light.ttf)
+}
+
+p{
+
+	font-family: opensans;
+	font-size: 1.8vw;
+
+}
+h1{
+	text-align: center;
+	font-family: opensansbold;
+	font-size: 4vmin;
+}
+.txtcenter{
+	text-align:center
+}
+.eMonth{
+	font-family: myriadBold;
+	text-align: center;
+	font-size: 7vmin !important;
+	margin:0;
+
+}
+.eDate{
+	font-family:myriadBold;
+	text-align: center;
+	font-size: 10vmin !important;
+	margin: 0;
+	margin-top: -10%;
+}
+.efonts{
+	font-size: 1.8vmin;
+	
+}
+.whitefont{
+	color: white;
+	opacity: .5;
+}
+body, html{
+   height: 100%;
+   padding: 0;
+   margin: 0;
+}
+.cont{
+	height:100%;
+	width:100%;
+	
+}
+
+.bgimg{
+
+
+    min-height: 650px;  
+    height: 100%;
+	width:100%;
+	background-color: #252525;
+	position: relative;	
+	
+
+
+}
+.divider{
+	background-color: #cd2828;
+	width: 100%;
+	height: 60px;
+	padding: 20px 0 20px 0;
+}
+.centerwrapper{
+	width: 80%;
+	margin: auto auto;
+
+}
+.whited{
+	width:42.85%;
+	min-width: 585px;
+	min-height: 600px;
+	position: relative;
+	margin-left: 4.54%;
+	height: 92.157%;
+	background-color: white;
+}
+#logofiller{
+	height: 20%;
+}
+
+#mainLogo{
+	position: relative;
+	width: auto;
+	max-width: 78.8034188%;
+	height: auto;			
+	display: block;
+	
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#mouseimg {
+	position: relative;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	width: 4.615383%;
+}
+
+
+#mainpg-txt{
+	position: relative;
+	display: block;
+	margin-top:16.1%;
+
+
+}
+
+/*EVENT PAGE CSS*/
+
+#eventcontainer{
+	height: 90.5%;
+	width: 100%;
+	background-color: white;
+	position: relative;
+	padding-top: 5%;
+
+
+}
+#eventslide{
+	margin-top: 5%;
+	width: 100%;
+	height: 68.68%;
+	/*border: 1px solid blue;*/
+	overflow: hidden;
+}
+#eventholderfull{
+	width: 200%;
+	height: 100%;
+
+}
+.slide{
+	width: 50%;    /* Since there are two slides, we're making the view half of eventholder's width, ie 100/2*/
+	height: 100%;
+	float: left;
+
+}
+.eventtemplate
+{
+height:98.5%;
+width:26%;
+margin-right:9%;
+display: inline-block;
+border: 2px solid #c0c0c0;
+vertical-align: top;
+
+
+}
+.eventspacer{
+	height: 3.42%;
+}
+.eventcal{
+	height: 31.26%;
+	width: 100%;
+	
+}
+.eInfo{
+	padding:6.89%;
+}
+.centerevent{
+	display: block;
+	width: 68.5%;
+	height: 100%;
+	margin: 0 auto;
+}
+.arrow{	
+	display: none;
+	position: relative;
+	float: right;
+	top:30%;
+	z-index: 2;
+	width: 1.831501832%;
+}
+#Rarrow #Larrow{
+	width: 100%;
+}
+
+@media screen and (max-width: 1050px){
+	.centerevent{
+		width: 85%;
+	}
+}
+@media screen and (max-width: 900px){
+	
+	.whited{
+		position: absolute;
+		width:585px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;				
+		background-color: white;
+		
+
+	}
+	#logofiller{
+		height: 20%;
+	}
+	.divtxt{
+		font-size: 2.2vw;
+	}
+	.centerevent{
+		width: 90%;
+	}
+}
+#eventholdermobile{
+	display: none;
+}
+@media screen and (max-width: 700px){   /* FOR MOBILE EVENTS PAGE*/
+	.arrow{
+		width: 5%;
+		display: block;
+	}
+	#eventholderfull{
+		display: none;
+	}
+	#eventholdermobile{
+		position: relative;
+		display: block;
+		width: 300%;
+		height: 100%;
+	}
+	.slidemobile{
+	width: 33.3333333%;    /* Since there are two slides, we're making the view half of eventholder's width, ie 100/2*/
+	height: 100%;
+	float: left;
+	}
+	.eventtemplate{
+		width: 100%;
+		margin-right: 0;
+	}
+	.centerevent{
+		width: 40%;
+	}
+
+
+}
+@media screen and (max-width: 600px){
+	p{
+		font-size: 4vw;
+	}
+	.divtxt{
+		font-size: 2.8vw;
+	}
+	.whited{
+		padding: 0 0 0 0;
+		width: 100%;
+		min-width: 0;
+		top:0;
+		height: 100%;
+		background-color: white;
+		min-height: 0px;
+
+	}
+	.bgimg{
+		min-height: 500px;
+	}
+
+}
+
