@@ -1,6 +1,19 @@
 $(document).ready(function(){
-	var $totalMslides = 2;
-	var $currentMslides= 0;
+
+
+	var $totalMslides = 2; 		/*total up to 3 slides for the mobile events page*/
+	var $currentMslides= 0;		/*first slide on index 0, also for mobile events page*/
+
+	/*Toggle class for the flipping animation*/
+	$(".imgcontainer").click(function(){
+		 $(this).toggleClass("rotator")  ; 
+
+		});
+		$(".imgcontainer2").click(function(){
+		 $(this).toggleClass("rotator2")  ; 
+
+		});
+
 
 	if ($currentMslides == 0){
 		$("#Larrow").css("display", "none");
@@ -10,14 +23,6 @@ $(document).ready(function(){
 		$("#Rarrow").css("display","none");
 	}
 
-	$("#Rarrow").hover(function()
-	{
-		$("#Rarrow").css("cursor", "pointer");
-	});
-	$("#Larrow").hover(function()
-	{
-		$("#Larrow").css("cursor", "pointer");
-	});
 
 	$('#Rarrow').click(function()
 		{

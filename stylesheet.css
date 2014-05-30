@@ -40,7 +40,7 @@ p{
 h1{
 	text-align: center;
 	font-family: opensansbold;
-	font-size: 4vmin;
+	font-size: 2.5vw;
 }
 .txtcenter{
 	text-align:center
@@ -72,6 +72,16 @@ body, html{
    padding: 0;
    margin: 0;
 }
+.whitecontainer{
+	height: 85.5%;
+	width: 100%;
+	background-color: white;
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+
 .cont{
 	height:100%;
 	width:100%;
@@ -101,7 +111,7 @@ body, html{
 	margin: auto auto;
 
 }
-.whited{
+.HomeContent{
 	width:42.85%;
 	min-width: 585px;
 	min-height: 600px;
@@ -145,15 +155,7 @@ body, html{
 
 /*EVENT PAGE CSS*/
 
-#eventcontainer{
-	height: 90.5%;
-	width: 100%;
-	background-color: white;
-	position: relative;
-	padding-top: 5%;
 
-
-}
 #eventslide{
 	margin-top: 5%;
 	width: 100%;
@@ -201,6 +203,8 @@ vertical-align: top;
 	margin: 0 auto;
 }
 .arrow{	
+	
+	cursor: pointer;
 	display: none;
 	position: relative;
 	float: right;
@@ -210,6 +214,113 @@ vertical-align: top;
 }
 #Rarrow #Larrow{
 	width: 100%;
+	
+}
+
+/*ABOUT US*/
+#aboutus{
+	min-height:90.5%;
+}
+#profileContainer1{
+	height: 200px;
+	width: 200px;
+	position: relative;
+	display: block;
+	margin:  2.298% auto;
+	border: 1px solid white;
+}
+#profileContainer2{
+	height: 150px;
+	width: 824px;
+	/*width: 1052px;*/
+	position: relative;
+	display: block;
+	margin:  2.298% auto;
+	/*border: 1px solid blue;*/
+}
+.imgcontainer
+{
+	width: 15.55209%;
+
+	display: inline-block;
+	position: absolute;
+
+}
+/*Below is used for the flipping animation*/
+
+.profileinfo, .profileimage{
+	cursor: pointer;
+	position: absolute;
+    -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
+    transition: transform 1s, z-index 0s 0.25s; 
+
+    
+}
+
+.profileinfo{
+	
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+   -webkit-transform: rotateY(180deg);   
+    transform: rotateY(180deg);
+    background-color: rgba(255,255,255,0.8);
+
+    
+}
+
+.profiletext{
+	width: 75%;
+	height: 75%;
+	padding-top: 20%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.profiletext p{
+		font-size: 1.4vw;
+}
+.profileimage{
+	width: 150px;
+	height150px;
+    z-index: 2;   
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    -webkit-transform: rotateY(0deg);  
+    transition: transform 1s, z-index 0s 0.25s; 
+    transform: rotateY(0deg);
+}
+
+.rotator{     
+    width:150px;   
+    height: 150px;
+}
+.rotator2{
+	width: 200px;
+	height: 200px;
+}
+.rotator .profileinfo,.rotator2 .profileinfo  {
+    z-index: 2;
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    -webkit-transform: rotateY(0deg);  
+    transition: transform 1s, z-index 0s 0.25s; 
+    transform: rotateY(0deg);
+    
+}
+.rotator  .profileimage,.rotator2  .profileimage{
+    -webkit-transform: rotateY(180deg);   
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    transition: transform 1s, z-index 0s 0.25s; 
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+/*Contact Us*/
+#Contactus
+{
+	background-image: url("Images/ContactUsBG.png");
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (max-width: 1050px){
@@ -219,7 +330,7 @@ vertical-align: top;
 }
 @media screen and (max-width: 900px){
 	
-	.whited{
+	.HomeContent{
 		position: absolute;
 		width:585px;
 		margin: 0 auto;
@@ -242,6 +353,9 @@ vertical-align: top;
 #eventholdermobile{
 	display: none;
 }
+
+
+
 @media screen and (max-width: 700px){   /* FOR MOBILE EVENTS PAGE*/
 	.arrow{
 		width: 5%;
@@ -278,7 +392,7 @@ vertical-align: top;
 	.divtxt{
 		font-size: 2.8vw;
 	}
-	.whited{
+	.HomeContent{
 		padding: 0 0 0 0;
 		width: 100%;
 		min-width: 0;

@@ -8,36 +8,44 @@
 		<script type="text/javascript" src='script.js'></script>
 
 </head>
-	<body>
+<body>
 
-
-<div class="bgimg">
-	<div style="height: 7.843%; min-height:50px;"></div>
-	<div class="whited">	
-		<div id="logofiller"></div>
-	
-			<img id="mainLogo" src="Images/UWRCA-Logo.png">
-			<div id="mainpg-txt">
-				<p class='txtcenter'>Scroll down to <img style="vertical-align:middle;"src="Images/mouse-scroll.png"> learn more</p>
-				
-			</div>
+	<!--Main Page-->
+	<div class="bgimg">
+		<div style="height: 7.843%; min-height:50px;"></div>
+		<div class="HomeContent">		
+			<div id="logofiller"></div>
 		
+				<img id="mainLogo" src="Images/UWRCA-Logo.png">
+				<div id="mainpg-txt">
+					<p class='txtcenter'>Scroll down to <img style="vertical-align:middle;"src="Images/mouse-scroll.png"> learn more</p>
+					
+				</div>		
 		</div>
 	</div>
+
+	<!--Divider-->
 	<div class="divider">
 		<div class= "centerwrapper">
 			<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">The Red Cross Association is about fulfilling the Canadian Red Cross Mission: To better the lives of susceptible people everywhere through people like you and I.</p>
 		</div>
 	</div>
-	<div id="eventcontainer">
+
+	<!--Events Page-->
+	<div class="whitecontainer">
 		<h1>EVENTS</h1>
+
+		<!--Left and Right Arrow-->
 		<div class="arrow">
 			<img id="Rarrow" src="Images/RightArrow.png">
 		</div>
 		<div class="arrow" style="float:left;">
 			<img id="Larrow" src="Images/LeftArrow.png">
 		</div>
+
+		
 		<div id="eventslide">
+			<!--Event for larger screens, display up to 3 events-->
 			<div id="eventholderfull">
 				<div class="slide" id="slide1">
 					<div class="centerevent">
@@ -71,15 +79,20 @@
 			</div>
 			<!--This is the event slides for mobile devices or small screens-->
 			<div id="eventholdermobile">
-
+				<!--Each div class="slidemobile" is a seperate slide for the event slider-->
 				<div class="slidemobile" id="slidemob1">
 					<div class="centerevent">
+
+						<!--Event Template generates the outline-->
 						<div class="eventtemplate">
 							<div class="eventspacer"></div>
+							<!--Calendar-->
 							<div class="eventcal" style="background-color: #2b2b2b;">
 								<p class="eMonth whitefont">APR</p>
 								<p class="eDate" style="color: white;">15</p>
 							</div>
+
+						<!--Main Data-->
 							<div class="eInfo">
 								<p class="efonts" style="font-size:2.3vmin; font-family: opensansreg;text-align: center;">League of Legends Event</p>
 								<p class="efonts">Date: Thursday June 9, 2014 <br>
@@ -109,7 +122,88 @@
 
 			</div>
 		</div>
+
 	</div>
-	</body>
+
+	<div class="divider">
+			<!--<div class= "centerwrapper">
+				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">The Red Cross Association is about fulfilling the Canadian Red Cross Mission: To better the lives of susceptible people everywhere through people like you and I.</p>
+			</div>-->
+	</div>	
+
+	<!--<div class="whitecontainer">
+		<h1>ABOUT US</h1>
+		<div id="profileContainer1">
+			/*
+			<div class="imgcontainer">
+				<img  class="profileimage" src="Images/Team/Alex.png">
+				<div  class="profileinfo"><div> Alex Wong<br>President </div></div>
+			</div>
+
+		</div>
+	</div>-->
+	<div class="whitecontainer" id="aboutus">
+		<h1>ABOUT US</h1>
+		<div id="profileContainer1">
+			<div class="imgcontainer2">
+						<img  class="profileimage" style="width:200px;" src="Images/Team/Alex.png">
+						<div class="profileinfo" style="width:200px; height:200px;"><div class="profiletext"> <p style="font-size:1.8vw;">Alex Wong<br>President</p> </div></div>
+			</div>
+		</div>
+		<div id="profileContainer2">			
+			<div class="imgcontainer" >
+						<img  class="profileimage" src="Images/Team/Scott.png">
+						<div class="profileinfo"><div class="profiletext"> <p>Scott Hall<br>Treasurer</p> </div></div>
+			</div>
+			<div class="imgcontainer" style="margin-left:218px">
+						<img  class="profileimage" src="Images/Team/Gibson.png">
+						<div class="profileinfo"><div class="profiletext"> <p>Gibson Wong<br>Developer</p> </div></div>
+			</div>
+			<div class="imgcontainer" style="margin-left:446px">
+						<img  class="profileimage" src="Images/Team/Corey.png">
+						<div class="profileinfo"><div class="profiletext"> <p>Corey Wu<br>Developer</p> </div></div>
+			</div>
+			<div class="imgcontainer" style="margin-left:674px">
+						<img  class="profileimage" src="Images/Team/Kaitlyn.png">
+						<div class="profileinfo"><div class="profiletext"> <p>Kaitlyn Gao<br>Promotions</p> </div></div>
+			</div>
+		
+		</div>
+			
+			<!--Second Row-->
+			<div id="profileContainer2">
+						<div class="imgcontainer">
+									<img  class="profileimage" src="Images/Team/Ester.png">
+									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Ester Fu<br>Promotional Coordinator</p> </div></div>
+						</div>
+						<div class="imgcontainer" style="margin-left:218px">
+									<img  class="profileimage" src="Images/Team/Carl.png">
+									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Carl Zhao<br>Fundraising Coordinator</p> </div></div>
+						</div>
+						<div class="imgcontainer" style="margin-left:446px">
+									<img  class="profileimage" src="Images/Team/Michael.png">
+									<div class="profileinfo"><div class="profiletext" style="padding-top:7%"> <p>Michael Zhang<br>Fundraising Coordinator</p> </div></div>
+						</div>
+						<div class="imgcontainer" style="margin-left:674px">
+									<img  class="profileimage" src="Images/Team/Flora.png">
+									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Flora <br>Fundraising Coordinator</p> </div></div>
+						</div>
+
+			</div>
+
+
+		</div>
+		<!--</div>-->
+
+	</div>
+	<div class="divider">
+			<!--<div class= "centerwrapper">
+				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">The Red Cross Association is about fulfilling the Canadian Red Cross Mission: To better the lives of susceptible people everywhere through people like you and I.</p>
+			</div>-->
+	</div>
+	<div id="Contactus">
+
+	</div>
+</body>
 
 </html>
