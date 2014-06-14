@@ -202,6 +202,30 @@
 			</div>-->
 	</div>
 	<div id="Contactus">
+		<script type="text/javascript">
+	        $(document).ready(function(){
+	            $("#mailForm").submit( function () {    
+	              $.post(
+	               'mail.php',
+	                $(this).serialize(),
+	                function(data){
+	                  $("#results").html(data)
+	                }
+	              );
+	              return false;   
+	            });   
+	        });
+		</script>
+
+		<form id="mailForm">
+			<p style="color:white;">Email Address: </p>
+			<br><input type="text" name="emailAddress" id="firstName" maxlength="50"><br>
+			<p style="color:white;">Subject:</p> 
+			<br><input type="text" name="subject" id="subject" maxlength="100"><br>
+			<p style="color:white;">Message:</p> 
+			<input name="submit" type="submit" value="Submit">
+		</form>	
+
 
 	</div>
 </body>
