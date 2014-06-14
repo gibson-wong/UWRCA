@@ -1,10 +1,14 @@
 <?php
-	// The message
-	$message = "Line 1\r\nLine 2\r\nLine 3";
+	$emailAddress = $_POST[emailAddress];
+	$subject = $_POST[subject];
+	$message = $_POST[message];
+
+	// Create a header containing the sender's email address
+	$header = "From: " . $emailAddress . "\n\n";
 
 	// In case any of our lines are larger than 70 characters, we should use wordwrap()
-	$message = wordwrap($message, 70, "\r\n");
+	$message = "Message: " . wordwrap($message, 70, "\r\n");
 
 	// Send
-	mail('coreywu0@mailinator.com', 'My Subject', $message);
+	mail("coreywu0@mailinator.com", $subject, $header . $message);
 ?>
