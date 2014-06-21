@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
 		<script type="text/javascript" src='script.js'></script>
-
+		<script src="http://www.websitecodetutorials.com/code/jquery-plugins/validation.js"></script>
 </head>
 <body>
 
@@ -204,8 +204,8 @@
 	<div id="Contactus">
 		<script type="text/javascript">
 	        $(document).ready(function(){
-	            $("#mailForm").submit( function () {    
-	              $.post(
+	            $("#emailForm").submit( function () {
+				$.post(
 	               'mail.php',
 	                $(this).serialize(),
 	                function(data){
@@ -217,16 +217,29 @@
 	        });
 		</script>
 
-		<form id="mailForm">
-			<p style="color:white;">Email Address: </p>
-			<br><input type="text" name="emailAddress" id="firstName" maxlength="50"><br>
-			<p style="color:white;">Subject:</p> 
-			<br><input type="text" name="subject" id="subject" maxlength="100"><br>
-			<p style="color:white;">Message:</p> 
-			<br><input type="text" name="message" id="message" maxlength="100000"><br>
-			<input name="submit" type="submit" value="Submit">
-		</form>	
+		<form id="emailForm" method="get" action="">
+			<fieldset>
+			    <p style="color:white;">
+					<label for="email">Email Address</label>
+					<input id="email" type="email" name="email" required/>
+			    </p>
+			    <p style="color:white;">
+					<label for="subject">Subject</label>
+					<input id="subject" name="subject" required/>
+			    </p>
+			    <p style="color:white;">
+					<label for="message">Message</label>
+					<input id="message" name="message" required/>
+			    </p>
+			    <p style="color:white;">
+					<input class="submit" type="submit" value="Submit"/>
+			    </p>
+		    </fieldset>
+		</form>
 
+		<script>
+			$("#emailForm").validate();
+		</script>
 
 	</div>
 </body>
