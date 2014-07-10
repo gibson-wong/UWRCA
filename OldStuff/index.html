@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset= "UTF-8"/>
+		<title>
+			uWaterloo Red Cross Association
+		</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+		<script type="text/javascript" src='jquery.cycle.all.js'></script>
+		<script type="text/javascript" src='script.js'></script>
+		
+		<script type="text/javascript">
+			$(function () {	
+				$('form').on('submit', function (e) {
+					$.ajax({		
+						type: 'POST',
+       					url: 'signup.php',
+    						data: $('form').serialize(),
+						error: function(msg){ 
+							alert('error' + msg);
+							console.log(msg);
+ 						},
+            					success: function () {
+              					alert('Thank you for joining UWRCA. We will begin recruiting members May 2014. Hope to see you in our events!');
+            					}
+          				});
+					e.preventDefault();
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+			<div id="header">
+			</div>
+
+			<div id="container">
+				<div id="logo">
+					<img src="uwrca-logo.gif">
+				</div>
+
+
+				<div id="flexslider">
+					<div class="slideshow">
+				         <img src="./Sliders/Banner2.jpg" style="width:850px">
+				         <img src="./Sliders/LoLPromoSlider.jpg" style="width:850px">
+        
+				     </div>
+
+				</div>
+				
+				
+				<div id="navbar">
+						<ul id="menu">
+							<li id="home"> <a href="test">Home</a> </li>
+							<li id="events"> <a href="#">Events</a> </li>
+							<li id="about"> <a href="#">About Us</a> </li>
+							<li id="signup"> <a href="#">Sign Up</a> </li>
+						</ul>
+				</div>
+				
+				<div id='wrapper'>
+					<div id= "main">
+						<div id= 'homepg'>
+
+							<!--
+							<div class='textbox'>
+								<h1>Welcome</h1>
+								<p style= "font-style:italic">	
+									Welcome to uWaterloo's Red Cross Association's Website!
+
+
+								</p>
+							</div>
+							-->
+							<div class='textbox' style="width:520px">
+								<h1>Upcoming Event</h1>
+								<img src="LoLPromo.jpg" style="height:220px; float:left; margin-right: 20px; display:block;">
+								<p style= "font-style:italic; margin-bottom:5px">	
+									Enter in a League of Legends competition to win a grand prize of 3200RP and more!
+									All proceeds are donated to the Red Cross! 									
+								</p>
+								<div id="learnbutton" style="float:right; margin-right:100px">Learn More</div>
+								
+							</div>
+
+							<div class='textbox'> 
+								<h1>Sign Up</h1>
+								<p style= "font-style:italic">									
+									Join us now to receive updates and notices on our upcoming events!
+									If you have a question, email us at rca.uwaterloo@gmail.com.
+								</p>
+
+								<div id='signupbutton'>Join Now</div>
+							</div>
+						</div>
+
+						<div id ='aboutpg'>
+
+							<div class='textbox'>
+								<h1>About Us</h1>
+								<p>
+									The UW Red Cross Association is about fulfilling the Canadian Red Cross mission: to better the lives of susceptible people everywhere through people like you and I. By hosting fundraising and promotional activities, we hope to raise awareness of the needs around us. Let us, the leaders of tomorrow, change the world one step at a time. 
+									<br><br>
+									<i> "Be the change you wish to see in the world." - Mahatma Gandhi </i>
+									
+
+								</p>	
+							</div>
+							<div class='textbox'>
+
+								<h1>President: Alex Wong</h1>
+								<img src="./About us/Alex.jpg" style="height:200px; float:left; margin-right: 20px;">
+								<p>Alex is a second year student at the University of Waterloo studying Accounting and Financial Management. During his spare time, he likes to throw Frisbee discs with friends, watch movies, and find random videos on YouTube. Furthermore, he enjoys a variety of video games including FPS, MMORPGs, and MOBAs.</p>
+							</div class='textbox'>
+
+							<div class="textbox" style="height:350px">
+								<h1>Vice President: Corey Wu</h1>
+								<img src="./About us/Corey.jpg" style="height:200px; float:right; margin-left: 20px;">
+								<p>Hey guys. My name is Corey Wu and I am a 2nd year Computer Engineering student here at the University of Waterloo. I am the Vice-President of the Red Cross Association so I will be assisting in the planning and coordinating of our events. Some of my hobbies include playing Dota 2, Ultimate Frisbee, and watching e-sports tournaments. I look forward to getting to know everyone who comes out to our events!
+								</p>
+							</div>
+							
+							<div class="textbox">
+								<h1>Treasurer: Scott Hall</h1>
+								<img src="./About us/Scott.jpg" style="height:200px; float:left; margin-right: 20px;">
+								<p>
+									Greetings and salutations! My name is Scott and I am an Accounting and Finance student entering my 2nd year here at Waterloo. My interests include aviation, skiing, and playing video games. I also enjoy watching the occasional YouTube video and a few TV shows. As the treasurer, I am responsible for keeping track of all funds that pass through the club.
+								</p>
+
+							</div>
+							<div class="textbox">
+								<h1>Web Developer: Gibson Wong</h1>
+								<img src="./About us/Gibson.png" style="height:200px; float:right; margin-left: 20px;">
+								<p>
+									Hello, I'm Gibson, a 2nd year student studying in Computing and Financial Management. I am also a web designer and developer for UWRCA. Outside of class, I enjoy playing sports and video games. I look forward to meeting you all at clubs day and any future events. 
+								</p>
+
+							</div>
+							<div class="textbox">
+								<h1>Promotional Coordinator: Esther Fu</h1>
+								<img src="./About us/Esther.jpg" style="height:200px; float:left; margin-right: 20px;">
+								<p>
+									I am a second year student studying Accounting and Financial Management. I enjoy playing badminton and hiking in my spare time. One day I would like to travel the world.
+								</p>
+
+							</div>
+
+							<div class="textbox">
+								<h1 >Fundraising Coordinator: Carl Zhao</h1>
+								<img src="./About us/Carl.jpg" style="height:200px; float:right; margin-left: 20px;">
+								<table>
+									<tr>
+											<td style="width:250px">Creative</td>
+											<td>Zealous</td>
+									</tr>
+									<tr>
+											<td>Awesome</td>
+											<td>Honest</td>
+									</tr>
+									<tr>
+											<td>Responsible</td>
+											<td>Artistic</td>
+									</tr>	
+									<tr>
+											<td>Loving</td>
+											<td>Optimistic</td>
+									</tr>
+
+								</table>
+
+							</div>
+							<div class="textbox">
+								<h1 >Fundraising Coordinator: Michael Zhang</h1>
+								<img src="./About us/Michael.jpg" style="height:200px; float:left; margin-right: 20px;">
+								<p>
+									Hi everyone! My name is Michael and I am in my second year studying Accounting and Financial Management at the University of Waterloo.  Some of my interests and hobbies are watching films/television shows and playing some sports.Some of my favorite shows are Suits, Breaking Bad, and Game of Thrones. I also like to watch the NFL and catch some Frisbees. I look forward to meeting you all! 
+								</p>
+							</div>
+							<div class="textbox">
+								<h1>Fundraising Coordinator: Flora Wang</h1>
+								<img src="./About us/ManYu.jpg" style="height:200px; float:right; margin-left: 20px;">
+								<p style="margin-right:  50px;" >
+									Friendly<br>
+									Lively<br>
+									Open<br>
+									Reliable<br>
+									Amiable<br>
+								</p>
+							</div>
+						</div>
+
+						<div id="eventspg">
+							<div class='textbox'>
+								<a name='top'></a>
+								<h1>Upcomming Events</h1>
+								<ul>
+									<a href="#workshop"><li>Emergency Preparedness Workshop (November 22, 2013)</li></a>
+									<a href="#league"><li>League of Legends Tournament (November 23,2013) </li></a>
+								</ul>
+							</div>
+
+							<div class='textbox'>
+								<a name="workshop"></a>
+								<p><b>Emergency Preparedness Workshop</b></p>
+								<p>The University of Waterloo Red Cross Association will be hosting an event on Friday November 22, 2013. Speakers from 
+								 the Red Cross will provide a workshop here at Environment 3, Rm 3412 at 2:00pm! We look forward to seeing you all at the 
+								 event!</p>
+
+							</div>
+
+							<div class='textbox'>
+								<a name="league"></a>
+								<p><b>League of Legends Tournament</b></p>
+								<p>Enjoy playing Leauge of Legends? Want to test out your skills and compete with other Waterloo students? Join now in our League of Legends Tournament for a chance to win up <b><i>3200RP and a Triumphant Ryze Skin!</i></b> Admission is only $5 per person or $20 per team and all proceeds are donated to Red Cross Association to help those in need. Here's what you have to do:</p>
+								<ol>
+									<li>Create a team of five players</li>
+									<li>Register <a target="_blank" href="https://docs.google.com/forms/d/1DCiPWPp3tsCuQvImr1c7Z76CaFyIePu6img4VoS68Ww/viewform">team</a>
+										or register 
+										<a target="_blank" href="https://docs.google.com/forms/d/1SIZqUaETiTGS9hP_w9eDoHO_V3k_7c2jv8ay_87Ns1Q/viewform">individually</a>. <i>Remember, deadline is November 20th, 2013</i> 
+									</li> 
+									<li>Collect $5 per person or $20 per team</li>
+								</ol>
+
+								<p>	
+								Below is our prizes, brackets and rules. Follow us for updates on our <a target="blank" href = "https://www.facebook.com/events/628110430567387/?hc_location=stream">facebook page</a>.<br>
+								Hope to see you all at the event!
+								</p>
+								<img src="prize-poster2.jpg">
+								<img src="LoLRules.png">								
+								<a href="#top" style="float:right"><p style="font-size:1.2em">Top</p></a>
+								<br><br>
+								<p></p>
+							</div>
+						</div>
+						
+						<div id="signuppg">
+							<div class='textbox' style="width:220px">
+								<h1>Sign Up</h1>
+								<p></p>				
+								<form>
+									First Name: <br><input type="text" name="firstName" id="firstName" maxlength="30"><br>
+									Last Name: <br><input type="text" name="lastName" id="lastName" maxlength="30"><br>
+									Student ID: <br><input type="text" name="studentId" id="studentId" maxlength="8"><br>
+									Program: <br><input type="text" name="program" id="program" maxlength="30"><br>
+									Email: <br><input type="text" name="email" id="email" maxlength="30"><br><br>
+								<input name="submit" type="submit" value="Submit">
+								</form>	
+
+							</div>
+							<div class='textbox' style="width:540px">
+								<h1>Email Us</h1>	
+								<p>Got a question for us? Whether it's about our upcoming events, or questions about our club, feel free
+									to leave a message email us at rca.uwaterloo@gmail.com. 
+								</p>
+								<!--
+									<form action="MAILTO:gibson_k_wong@hotmail.com" method="post" enctype="text/plain">
+										<textarea rows="7" cols="50"></textarea>
+									
+										<input type="submit" value="Send">
+									
+									</form>
+								-->
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+	</body>		
+</html>

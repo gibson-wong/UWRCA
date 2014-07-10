@@ -1,0 +1,246 @@
+
+html {
+	border: 0px solid ;
+	height: auto;
+
+	position: relative;
+
+
+
+
+}
+body{
+  
+  width: 100%;
+  height: auto;
+  background: url(header.jpg) repeat-x;
+  padding: 0;
+  margin: 0;
+  position: relative;
+	
+
+}
+
+
+
+#container {
+	position: relative;
+	width: 950px;
+	height: auto;
+	margin: 30px auto 0px;
+	padding-top: 40px;
+	background-color: rgba(237, 28, 36, 0.07);
+
+	border: 2px ;
+}
+
+
+#logo {	
+	position:relative;
+	margin: 0px 60px;
+	border: 2px ;
+	height: 200px;
+	width: 380px;
+
+}
+#navbar {
+
+	position: relative;
+	z-index: 10;
+	display: block;
+	width: 700px;
+	height: 30px;
+	margin: 0px auto;
+	box-shadow: 3px 3px 5px #888888;
+	background:transparent url(menuBG4.jpg) repeat-x;
+}
+
+	ul#menu {
+		border: 0px solid;
+		width:428px;
+		height:30px;
+		/*float:right;*/
+		margin:0px 160px;
+		padding:0;
+		list-style-type:none;
+		background:transparent url(menuBG4.jpg) repeat-x;
+	}
+
+	ul#menu li {
+			float:left;
+		}
+
+	ul#menu li a {
+		display: block;		
+		height:30px;
+		overflow:hidden;
+		text-indent:-99999px;
+		background:transparent url(menuFull5.jpg) no-repeat;
+	}
+
+		ul#menu li#home a { background-position:0px 0px; width:80.5px; } 
+		ul#menu li#home a:hover { background-position:0px -30px; width:80.5px; }  
+
+
+		ul#menu li#events a { background-position:-80.5px 0px; width:104.5px; } 
+		ul#menu li#events a:hover { background-position:-80.5px -30px; width:104.5px; }  
+
+		ul#menu li#about a { background-position:-185px 0px; width:135px; } 
+		ul#menu li#about a:hover { background-position:-185px -30px; width:135px; }  
+
+		ul#menu li#signup a { background-position:-320px 0px; width:108px; } 
+		ul#menu li#signup a:hover { background-position:-320px -30px; width:108px; }  
+
+#flexslider {
+	display: block;
+	position: relative;
+	
+	top: 20px;
+	width: 850px ;
+	height: 300px;
+	margin: 0px auto;
+	border: 0px  solid;
+
+}
+
+#main{
+	border: 0px blue solid ;
+}
+
+#wrapper{
+	border: 1px rgba(237, 28, 36, 0) solid ;  /*  make border same color as background, required to transition between pages */
+}
+#homepg, #eventspg, #signuppg, #aboutpg {
+	position: relative;
+	width: 860px;
+	margin: 25px auto;
+	padding-top: 0px;
+	height: auto;
+	border: 0px ;
+	overflow: auto;
+
+
+
+}
+
+#homepg {
+	display: block;
+}
+
+#homepg > div {
+	width: 236px;
+	height: 340px;
+	float: left;
+	margin: 5px;
+	border: 1px ;
+	background-color: rgba(0, 0, 0, 0.5);
+
+
+
+}
+
+#signupbutton, #learnbutton {
+
+	width: 80px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	position: relative;
+	background-color: #B70501;
+	border-radius: 2.5px;
+	color:white;
+	font-style: bold;
+	font-size: 1em;
+	font-family: "Gautami";
+	cursor: pointer;
+	text-align: center;
+	box-shadow: 2.5px 4px 10px #463D3D;
+
+}
+
+#signupbutton:hover, #learnbutton:hover {
+
+	background-color: #990703; 	
+}
+
+#aboutpg {
+	display: none;
+}
+
+#aboutpg div {
+	width: 750px;
+	height: 325px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px ;
+	margin-top: 10px;
+	clear: both;
+}
+
+#aboutpg div:first-child{
+	width:820px;
+	height: 275px;
+	margin-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+#aboutpg div:nth-child(even){
+	float: left;
+} 
+
+#aboutpg div:nth-child(odd){
+	float: right;
+} 
+
+#signuppg > div{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 450px;
+	padding-top: 4px;
+	float: left;
+	margin: 5px;
+}
+
+
+#eventspg > div{
+	
+	
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-bottom: 30px;
+
+}
+#eventspg a{
+	text-decoration: none;
+
+}
+.textbox {
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+p,td,li,form {
+	border: 0px solid black;
+	color: white;
+	font-size: 1.4em;
+	font-family: "Gautami";
+	line-height: 120%;
+	
+}
+input {
+
+	width: 200px;
+}
+h1 {
+	font-family: "Gautami";
+	font-style: bold;
+	color: white;
+	font-size: 1.7em;
+
+}
+
