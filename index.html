@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
 		<script type="text/javascript" src='script.js'></script>
-
+		<script src="http://www.websitecodetutorials.com/code/jquery-plugins/validation.js"></script>
 </head>
 <body>
 
@@ -207,8 +207,8 @@
 		<h1 style="margin: 0 0 0 0; color:#EBEBE0;">CONTACT US</h1>
 		<script type="text/javascript">
 	        $(document).ready(function(){
-	            $("#mailForm").submit( function () {    
-	              $.post(
+	            $("#emailForm").submit( function () {
+				$.post(
 	               'mail.php',
 	                $(this).serialize(),
 	                function(data){
@@ -219,9 +219,10 @@
 	            });   
 	        });
 		</script>
+
 		<div style="width: 100%; height: 5%; display:block"></div>
 
-		<div id="formcontainer">
+	<!--	<div id="formcontainer">
 			<p style="color:white; font-size: 19px;">Are you interested in joining us? Do you have any questions about our events or what we do? Feel free to leave us a message below!</p><br>
 			<form id="mailForm">
 				<p style="color:white;">Email Address: </p>
@@ -229,11 +230,38 @@
 				<p style="color:white;">Subject:</p> 
 				<br><input class="inputBox" type="text" name="subject" id="subject" maxlength="100"><br><br>
 				<p style="color:white;">Message:</p> 
-				<!--<br><input class="inputBox" type="text" name="message" id="message" maxlength="100000"><br><br><br>-->
+				<br><input class="inputBox" type="text" name="message" id="message" maxlength="100000"><br><br><br>
 				<br><textarea class="textBox" type="text" name="message" id="message" maxlength="100000"></textarea><br><br>
 				<input name="submit" type="submit" value="Submit">
 			</form>	
+		</div>-->
+
+		<div id="formcontainer">
+			<p style="color:white; font-size: 19px;">Are you interested in joining us? Do you have any questions about our events or what we do? Feel free to leave us a message below!</p><br>
+			<form id="emailForm" method="get" action="">
+				<fieldset style="border: 0px solid blue; padding: 0 0 0 0">
+				    <p style="color:white;">
+						<label for="email">Email Address</label><br>
+						<input class="inputBox" id="email" type="email" name="email" required/>
+				    </p><br>
+				    <p style="color:white;">
+						<label for="subject">Subject</label><br>
+						<input class="inputBox" id="subject" name="subject" required/>
+				    </p><br>
+				    <p style="color:white;">
+						<label for="message">Message</label><br>
+						<textarea style= "resize:none" class="textBox" id="message" name="message" required/></textarea>
+				    </p><br><br>
+				    <p style="color:white;">
+						<input class="submit" type="submit" value="Submit"/>
+				    </p>
+			    </fieldset>
+			</form>
 		</div>
+		<script>
+			$("#emailForm").validate();
+		</script>
+
 
 	</div>
 </body>
