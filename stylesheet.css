@@ -177,7 +177,8 @@ body, html{
 .eventtemplate
 {
 height:98.5%;
-width:26%;
+/*width:26%;   use this for multiple slies*/
+width:35%;
 margin-right:9%;
 display: inline-block;
 border: 2px solid #c0c0c0;
@@ -195,6 +196,17 @@ vertical-align: top;
 }
 .eInfo{
 	padding:6.89%;
+}
+.eButton{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background-color: #2b2b2b;
+	height: 7%;
+	width: 45%;
+	vertical-align: middle;
+	line-height: 160%; 
+	text-align: center;
 }
 .centerevent{
 	display: block;
@@ -219,7 +231,7 @@ vertical-align: top;
 
 /*ABOUT US*/
 #aboutus{
-	min-height:90.5%;
+	min-height:650px;
 }
 #profileContainer1{
 	height: 200px;
@@ -317,11 +329,48 @@ vertical-align: top;
 /*Contact Us*/
 #Contactus
 {
-	background-image: url("Images/ContactUsBG.png");
-	background-size: 100%;
-	width: 100%;
-	height: 100%;
+	background: url(Images/ContactUsBG.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
+#formcontainer
+{
+	width: 45%;
+	height: 80%;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+
+}
+#formcontainer p{
+	margin: 0 0 0 0;
+}
+.inputBox{
+	width: 100%;
+	height: 30px;
+}
+.textBox{
+	width: 100%;
+	height: 120px;
+}
+.inputBox[type="text"], .textBox[type="text"]
+{
+    font-size:20px;
+    font-family: opensans;
+
+}
+input[type=submit] {
+	padding: 1px 20px;
+    cursor:pointer;
+    font-size:20px;
+    font-family: opensans;
+
+}
+
+
 
 @media screen and (max-width: 1050px){
 	.centerevent{

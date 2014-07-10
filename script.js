@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-	var $totalMslides = 2; 		/*total up to 3 slides for the mobile events page*/
+	var $totalMslides = 0; 		/*total up to 3 slides for the mobile events page*/
 	var $currentMslides= 0;		/*first slide on index 0, also for mobile events page*/
 
 	/*Toggle class for the flipping animation*/

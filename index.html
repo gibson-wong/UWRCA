@@ -49,23 +49,24 @@
 			<div id="eventholderfull">
 				<div class="slide" id="slide1">
 					<div class="centerevent">
-						<div class="eventtemplate">
+						<div class="eventtemplate" style="margin: 0 auto; display:block; position: relative;">
 							<div class="eventspacer"></div>
 							<div class="eventcal" style="background-color: #2b2b2b;">
-								<p class="eMonth whitefont">APR</p>
-								<p class="eDate" style="color: white;">15</p>
+								<p class="eMonth whitefont">JUL</p>
+								<p class="eDate" style="color: white;">7</p>
 							</div>
 							<div class="eInfo">
-								<p class="efonts" style="font-size:2.3vmin; font-family: opensansreg;text-align: center;">League of Legends Event</p>
-								<p class="efonts">Date: Thursday June 9, 2014 <br>
-									Time: 3:00pm - 5:00pm <br>
-									Location: DC 1350<br>
-									<br>
-									Come join our League of Legends Tournament and compete for a prizes and more!
+								<p class="efonts" style="font-size:2.3vmin; font-family: opensansreg;text-align: center;">Cross Campus Scavenger Hunt...Poker Style</p>
+								<p class="efonts">Date: July - August 2014 <br>
+									<!--Time: 3:00pm - 5:00pm <br>-->
+									<!--Location: University of Waterloo<br>-->
+									
+									Come join us for a month full of fun. We have organized a cross-campus scavenger hunt all over University of Waterloo. 
 								</p>	
 							</div>
+							<div class="eButton"style="font-size:2.3vmin; font-family:opensans"><a href="https://www.facebook.com/events/344246835700672/?notif_t=plan_user_invited" target="_blank" style="color:white; text-decoration: none;">Learn More</a></div>
 						</div>
-						<div class="eventtemplate">
+						<!--<div class="eventtemplate">
 							<div class="eventspacer"></div>
 							<div class= "eventcal" style="background-color: #cd2828;">
 								<p class="eMonth whitefont" style="color:white"> SEP</p>
@@ -73,7 +74,7 @@
 							</div>
 
 						</div>
-						<div class="eventtemplate" style="margin-right:0;"></div>
+						<div class="eventtemplate" style="margin-right:0;"></div>-->
 					</div>
 				</div>
 			</div>
@@ -106,7 +107,7 @@
 					</div>
 
 				</div>
-				<div class="slidemobile" id="slidemob1">
+				<!--<div class="slidemobile" id="slidemob1">
 					<div class="centerevent">
 						<div class="eventtemplate">
 								<div class="eventspacer"></div>
@@ -117,7 +118,7 @@
 
 						</div>
 					</div>
-				</div>
+				</div>-->
 
 
 			</div>
@@ -126,9 +127,10 @@
 	</div>
 
 	<div class="divider">
-			<!--<div class= "centerwrapper">
-				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">The Red Cross Association is about fulfilling the Canadian Red Cross Mission: To better the lives of susceptible people everywhere through people like you and I.</p>
-			</div>-->
+			<div class= "centerwrapper">
+				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">Our executive members below are always looking for new ways to help and raise funds for those in needs.</p>
+			</div>-
+
 	</div>	
 
 	<!--<div class="whitecontainer">
@@ -174,7 +176,7 @@
 			<div id="profileContainer2">
 						<div class="imgcontainer">
 									<img  class="profileimage" src="Images/Team/Ester.png">
-									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Ester Fu<br>Promotional Coordinator</p> </div></div>
+									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Esther Fu<br>Promotional Coordinator</p> </div></div>
 						</div>
 						<div class="imgcontainer" style="margin-left:218px">
 									<img  class="profileimage" src="Images/Team/Carl.png">
@@ -197,11 +199,12 @@
 
 	</div>
 	<div class="divider">
-			<!--<div class= "centerwrapper">
-				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">The Red Cross Association is about fulfilling the Canadian Red Cross Mission: To better the lives of susceptible people everywhere through people like you and I.</p>
-			</div>-->
+			<div class= "centerwrapper">
+				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">We are always open to answering any questions you have about our club, our team, or even the events we are promoting!</p>
+			</div>
 	</div>
-	<div id="Contactus">
+	<div class="whitecontainer" id="Contactus">
+		<h1 style="margin: 0 0 0 0; color:#EBEBE0;">CONTACT US</h1>
 		<script type="text/javascript">
 	        $(document).ready(function(){
 	            $("#mailForm").submit( function () {    
@@ -216,17 +219,21 @@
 	            });   
 	        });
 		</script>
+		<div style="width: 100%; height: 5%; display:block"></div>
 
-		<form id="mailForm">
-			<p style="color:white;">Email Address: </p>
-			<br><input type="text" name="emailAddress" id="firstName" maxlength="50"><br>
-			<p style="color:white;">Subject:</p> 
-			<br><input type="text" name="subject" id="subject" maxlength="100"><br>
-			<p style="color:white;">Message:</p> 
-			<br><input type="text" name="message" id="message" maxlength="100000"><br>
-			<input name="submit" type="submit" value="Submit">
-		</form>	
-
+		<div id="formcontainer">
+			<p style="color:white; font-size: 19px;">Are you interested in joining us? Do you have any questions about our events or what we do? Feel free to leave us a message below!</p><br>
+			<form id="mailForm">
+				<p style="color:white;">Email Address: </p>
+				<br><input class="inputBox" type="text" name="emailAddress" id="firstName" maxlength="50"><br><br>
+				<p style="color:white;">Subject:</p> 
+				<br><input class="inputBox" type="text" name="subject" id="subject" maxlength="100"><br><br>
+				<p style="color:white;">Message:</p> 
+				<!--<br><input class="inputBox" type="text" name="message" id="message" maxlength="100000"><br><br><br>-->
+				<br><textarea class="textBox" type="text" name="message" id="message" maxlength="100000"></textarea><br><br>
+				<input name="submit" type="submit" value="Submit">
+			</form>	
+		</div>
 
 	</div>
 </body>
