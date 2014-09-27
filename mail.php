@@ -10,5 +10,5 @@
 	$message = "Message: " . wordwrap($message, 70, "\r\n");
 
 	// Send
-	mail("coreywu0@mailinator.com", $subject, $header . $message);
+	mail("rca.uwaterloo@gmail.com", $subject, $header . $message);
 ?>

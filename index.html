@@ -326,6 +326,12 @@
 		</div>
 		<script>
 			$("#emailForm").validate();
+
+	        $( ".submit" ).click(function() {
+  				if ($("#email").val() && $("#subject").val() && $("#message").val()) {
+  					alert( "Your message has been sent. Thank you." );
+  				}
+			});
 		</script>
 
 
