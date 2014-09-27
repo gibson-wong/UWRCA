@@ -4,35 +4,51 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<script type="text/javascript" src='script.js'></script>
+		<script type="text/javascript" src='scroll-script.js'></script>
 		<script src="http://www.websitecodetutorials.com/code/jquery-plugins/validation.js"></script>
 </head>
 <body>
 
+	<!--BreadCrumbs-->
+	<div class="breadCrumbsContainer">
+		<div class="breadCrumbsContent">
+			<ul class="breadCrumbsList">
+				<li class="marginCenter"> <a class = "noTxtDecoration" href="#home">Home</a></li>
+				<li class="marginCenter"> <a class = "noTxtDecoration" href="#events">Events</a></li>
+				<li class="marginCenter"> <a class = "noTxtDecoration" href="#aboutus">About Us</a></li>
+				<li class="marginCenter"> <a class = "noTxtDecoration" href="#Contactus">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="breadCrumbsIcon">
+		</div>
+	</div>
+
 	<!--Main Page-->
-	<div class="bgimg">
+	<div id="home" class="bgimg">
 		<div style="height: 7.843%; min-height:50px;"></div>
 		<div class="HomeContent">		
 			<div id="logofiller"></div>
 		
 				<img id="mainLogo" src="Images/UWRCA-Logo.png">
 				<div id="mainpg-txt">
-					<p class='txtcenter'>Scroll down to <img style="vertical-align:middle;"src="Images/mouse-scroll.png"> learn more</p>
+					<p class='txtcenter' id='scrollToLearnMore'>Scroll down to <img style="vertical-align:middle;"src="Images/mouse-scroll.png"> learn more</p>
 					
 				</div>		
 		</div>
 	</div>
 
-	<!--Divider-->
-	<div class="divider">
-		<div class= "centerwrapper">
-			<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">The Red Cross Association is about fulfilling the Canadian Red Cross Mission: To better the lives of susceptible people everywhere through people like you and I.</p>
+	<!--divider displayAsTable-->
+	<div class="divider displayAsTable">
+		<div class= "centerWrapper verticalAlignTable">
+			<p class="seperatorTxt txtcenter" style="color:white;">The Red Cross Association is about fulfilling the Canadian Red Cross Mission: To better the lives of susceptible people everywhere through people like you and I.</p>
 		</div>
 	</div>
 
 	<!--Events Page-->
-	<div class="whitecontainer">
+	<div class="whitecontainer events" id="events">
 		<h1>EVENTS</h1>
 
 		<!--Left and Right Arrow-->
@@ -56,7 +72,7 @@
 								<p class="eDate" style="color: white;">7</p>
 							</div>
 							<div class="eInfo">
-								<p class="efonts" style="font-size:2.3vmin; font-family: opensansreg;text-align: center;">Cross Campus Scavenger Hunt...Poker Style</p>
+								<p class="efonts" style="font-size:16px; font-family: opensansreg;text-align: center;">Cross Campus Scavenger Hunt...Poker Style</p>
 								<p class="efonts">Date: July - August 2014 <br>
 									<!--Time: 3:00pm - 5:00pm <br>-->
 									<!--Location: University of Waterloo<br>-->
@@ -64,7 +80,9 @@
 									Come join us for a month full of fun. We have organized a cross-campus scavenger hunt all over University of Waterloo. 
 								</p>	
 							</div>
-							<div class="eButton"style="font-size:2.3vmin; font-family:opensans"><a href="https://www.facebook.com/events/344246835700672/?notif_t=plan_user_invited" target="_blank" style="color:white; text-decoration: none;">Learn More</a></div>
+							<div class="stickyBottom eButtonContainer">
+								<div class="eButton"style="font-size:16px; font-family:opensans"><a href="https://www.facebook.com/events/344246835700672/?notif_t=plan_user_invited" target="_blank" style="color:white; text-decoration: none;">Learn More</a></div>
+							</div>
 						</div>
 						<!--<div class="eventtemplate">
 							<div class="eventspacer"></div>
@@ -85,23 +103,23 @@
 					<div class="centerevent">
 
 						<!--Event Template generates the outline-->
-						<div class="eventtemplate">
+						<div class="eventtemplate" style="margin: 0 auto; display:block; position: relative;">
 							<div class="eventspacer"></div>
-							<!--Calendar-->
 							<div class="eventcal" style="background-color: #2b2b2b;">
-								<p class="eMonth whitefont">APR</p>
-								<p class="eDate" style="color: white;">15</p>
+								<p class="eMonth whitefont">JUL</p>
+								<p class="eDate" style="color: white;">7</p>
 							</div>
-
-						<!--Main Data-->
 							<div class="eInfo">
-								<p class="efonts" style="font-size:2.3vmin; font-family: opensansreg;text-align: center;">League of Legends Event</p>
-								<p class="efonts">Date: Thursday June 9, 2014 <br>
-									Time: 3:00pm - 5:00pm <br>
-									Location: DC 1350<br>
-									<br>
-									Come join our League of Legends Tournament and compete for a prizes and more!
+								<p class="efonts" style="font-size:16px; font-family: opensansreg;text-align: center;">Cross Campus Scavenger Hunt...Poker Style</p>
+								<p class="efonts">Date: July - August 2014 <br>
+									<!--Time: 3:00pm - 5:00pm <br>-->
+									<!--Location: University of Waterloo<br>-->
+									
+									Come join us for a month full of fun. We have organized a cross-campus scavenger hunt all over University of Waterloo. 
 								</p>	
+							</div>
+							<div class="stickyBottom eButtonContainer">
+								<div class="eButton"style="font-size:16px; font-family:opensans"><a href="https://www.facebook.com/events/344246835700672/?notif_t=plan_user_invited" target="_blank" style="color:white; text-decoration: none;">Learn More</a></div>
 							</div>
 						</div>
 					</div>
@@ -126,16 +144,15 @@
 
 	</div>
 
-	<div class="divider">
-			<div class= "centerwrapper">
-				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">Our executive members below are always looking for new ways to help and raise funds for those in needs.</p>
-			</div>-
-
+	<div class="divider displayAsTable">
+			<div class= "centerWrapper verticalAlignTable">
+				<p class="seperatorTxt txtcenter" style="color:white;">Our executive members below are always looking for new ways to help and raise funds for those in needs.</p>
+			</div>
 	</div>	
 
 	<!--<div class="whitecontainer">
 		<h1>ABOUT US</h1>
-		<div id="profileContainer1">
+		<div class="profileContainer1">
 			/*
 			<div class="imgcontainer">
 				<img  class="profileimage" src="Images/Team/Alex.png">
@@ -146,61 +163,110 @@
 	</div>-->
 	<div class="whitecontainer" id="aboutus">
 		<h1>ABOUT US</h1>
-		<div id="profileContainer1">
-			<div class="imgcontainer2">
-						<img  class="profileimage" style="width:200px;" src="Images/Team/Alex.png">
-						<div class="profileinfo" style="width:200px; height:200px;"><div class="profiletext"> <p style="font-size:1.8vw;">Alex Wong<br>President</p> </div></div>
+		<div id="profileFull">
+			<div class="profileContainer1">
+				<div class="imgcontainer2">
+							<img  class="profileimage" style="width:200px; height:200px" src="Images/Team/Alex.png">
+							<div class="profileinfo" style="width:200px; height:200px;"><div class="profiletext displayAsTable"> <p class="verticalAlignTable" style="font-size:24px;">Alex Wong<br>President</p> </div></div>
+				</div>
 			</div>
-		</div>
-		<div id="profileContainer2">			
-			<div class="imgcontainer" >
-						<img  class="profileimage" src="Images/Team/Scott.png">
-						<div class="profileinfo"><div class="profiletext"> <p>Scott Hall<br>Treasurer</p> </div></div>
+			<div class="profileContainer2">			
+				<div class="imgcontainer" >
+							<img  class="profileimage" src="Images/Team/Scott.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Scott Hall<br>Treasurer</p> </div></div>
+				</div>
+				<div class="imgcontainer" style="margin-left:218px">
+							<img  class="profileimage" src="Images/Team/Gibson.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Gibson Wong<br>Developer</p> </div></div>
+				</div>
+				<div class="imgcontainer" style="margin-left:446px">
+							<img  class="profileimage" src="Images/Team/Corey.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Corey Wu<br>Developer</p> </div></div>
+				</div>
+				<div class="imgcontainer" style="margin-left:674px">
+							<img  class="profileimage" src="Images/Team/Kaitlyn.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Kaitlyn Gao<br>Promotions</p> </div></div>
+				</div>		
 			</div>
-			<div class="imgcontainer" style="margin-left:218px">
-						<img  class="profileimage" src="Images/Team/Gibson.png">
-						<div class="profileinfo"><div class="profiletext"> <p>Gibson Wong<br>Developer</p> </div></div>
-			</div>
-			<div class="imgcontainer" style="margin-left:446px">
-						<img  class="profileimage" src="Images/Team/Corey.png">
-						<div class="profileinfo"><div class="profiletext"> <p>Corey Wu<br>Developer</p> </div></div>
-			</div>
-			<div class="imgcontainer" style="margin-left:674px">
-						<img  class="profileimage" src="Images/Team/Kaitlyn.png">
-						<div class="profileinfo"><div class="profiletext"> <p>Kaitlyn Gao<br>Promotions</p> </div></div>
-			</div>
-		
-		</div>
-			
-			<!--Second Row-->
-			<div id="profileContainer2">
+				
+				<!--Second Row-->
+			<div class="profileContainer2">
 						<div class="imgcontainer">
 									<img  class="profileimage" src="Images/Team/Ester.png">
-									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Esther Fu<br>Promotional Coordinator</p> </div></div>
+									<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Esther Fu<br>Promotional Coordinator</p> </div></div>
 						</div>
 						<div class="imgcontainer" style="margin-left:218px">
 									<img  class="profileimage" src="Images/Team/Carl.png">
-									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Carl Zhao<br>Fundraising Coordinator</p> </div></div>
+									<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Carl Zhao<br>Fundraising Coordinator</p> </div></div>
 						</div>
 						<div class="imgcontainer" style="margin-left:446px">
 									<img  class="profileimage" src="Images/Team/Michael.png">
-									<div class="profileinfo"><div class="profiletext" style="padding-top:7%"> <p>Michael Zhang<br>Fundraising Coordinator</p> </div></div>
+									<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Michael Zhang<br>Fundraising Coordinator</p> </div></div>
 						</div>
 						<div class="imgcontainer" style="margin-left:674px">
 									<img  class="profileimage" src="Images/Team/Flora.png">
-									<div class="profileinfo"><div class="profiletext" style="padding-top:10%"> <p>Flora <br>Fundraising Coordinator</p> </div></div>
+									<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Flora <br>Fundraising Coordinator</p> </div></div>
 						</div>
-
 			</div>
-
-
 		</div>
-		<!--</div>-->
+		<div id="profileMobile">
+			<div class="profileContainer1">
+				<div class="imgcontainer2">
+							<img  class="profileimage" style="width:200px; height:200px" src="Images/Team/Alex.png">
+							<div class="profileinfo" style="width:200px; height:200px;"><div class="profiletext displayAsTable"> <p class="verticalAlignTable" style="font-size:24px;">Alex Wong<br>President</p> </div></div>
+				</div>
+			</div>
+			<div class="profileContainer2">			
+				<div class="imgcontainer" >
+							<img  class="profileimage" src="Images/Team/Scott.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Scott Hall<br>Treasurer</p> </div></div>
+				</div>
+				<div class="imgcontainer" style="margin-left:218px">
+							<img  class="profileimage" src="Images/Team/Gibson.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Gibson Wong<br>Developer</p> </div></div>
+				</div>
+			</div>
+			<div class="profileContainer2">
+				<div class="imgcontainer">
+							<img  class="profileimage" src="Images/Team/Corey.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Corey Wu<br>Developer</p> </div></div>
+				</div>
+				<div class="imgcontainer" style="margin-left:218px">
+							<img  class="profileimage" src="Images/Team/Kaitlyn.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Kaitlyn Gao<br>Promotions</p> </div></div>
+				</div>		
+			</div>
+				
+				<!--Second Row-->
+			<div class="profileContainer2">
+				<div class="imgcontainer">
+							<img  class="profileimage" src="Images/Team/Ester.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Esther Fu<br>Promotional Coordinator</p> </div></div>
+				</div>
+				<div class="imgcontainer" style="margin-left:218px">
+							<img  class="profileimage" src="Images/Team/Carl.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Carl Zhao<br>Fundraising Coordinator</p> </div></div>
+				</div>
+			</div>
+			<div class="profileContainer2">
+				<div class="imgcontainer">
+							<img  class="profileimage" src="Images/Team/Michael.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Michael Zhang<br>Fundraising Coordinator</p> </div></div>
+				</div>
+				<div class="imgcontainer" style="margin-left:218px">
+							<img  class="profileimage" src="Images/Team/Flora.png">
+							<div class="profileinfo"><div class="profiletext displayAsTable"> <p class="verticalAlignTable">Flora <br>Fundraising Coordinator</p> </div></div>
+				</div>
+			</div>
+		</div>
 
 	</div>
-	<div class="divider">
-			<div class= "centerwrapper">
-				<p class="txtcenter divtxt" style="color:white; margin-top:0px; vertical-align:middle;">We are always open to answering any questions you have about our club, our team, or even the events we are promoting!</p>
+		<!--</div>-->
+
+
+	<div class="divider displayAsTable">
+			<div class= "centerWrapper verticalAlignTable">
+				<p class="seperatorTxt txtcenter" style="color:white;">We are always open to answering any questions you have about our club, our team, or even the events we are promoting!</p>
 			</div>
 	</div>
 	<div class="whitecontainer" id="Contactus">

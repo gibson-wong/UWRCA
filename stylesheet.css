@@ -31,37 +31,50 @@
 	src: url(open-sans/OpenSans-Light.ttf)
 }
 
-p{
-
+p, a{
 	font-family: opensans;
-	font-size: 1.8vw;
-
+	font-size: 16px;
 }
 h1{
 	text-align: center;
-	font-family: opensansbold;
-	font-size: 2.5vw;
+	font-family: opensans;
+	font-size: 36px;
+}
+.marginCenter {
+	margin: 0 auto;
 }
 .txtcenter{
-	text-align:center
+	text-align:center;
 }
-.eMonth{
-	font-family: myriadBold;
+.seperatorTxt{
+		font-size:24px;
+		margin: 0;
+}
+.displayAsTable {
+	display: table;
+}
+.verticalAlignTable {
+	vertical-align: middle;
+	display: table-cell;
+}
+.noTxtDecoration {
+	text-decoration: none;
+}
+div .eMonth{
 	text-align: center;
-	font-size: 7vmin !important;
+	font-size: 48px;
 	margin:0;
 
 }
-.eDate{
-	font-family:myriadBold;
+div .eDate{
 	text-align: center;
-	font-size: 10vmin !important;
+	font-size: 48px;
 	margin: 0;
-	margin-top: -10%;
+	margin-top: -5.5%;
 }
 .efonts{
-	font-size: 1.8vmin;
-	
+	margin: 10px 0px 0px 0px;
+	font-size: 14px	
 }
 .whitefont{
 	color: white;
@@ -103,14 +116,59 @@ body, html{
 .divider{
 	background-color: #cd2828;
 	width: 100%;
-	height: 60px;
 	padding: 20px 0 20px 0;
 }
-.centerwrapper{
+.centerWrapper{
 	width: 80%;
+	padding: 0 10%;
 	margin: auto auto;
 
 }
+.stickyBottom {
+	position: absolute;
+	bottom: 0;
+}
+
+/* Bread Crumbs */
+.breadCrumbsContent {
+
+    width: 100%;
+    background-color: #cd2828;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 3px solid #B82424;
+    top: -150px;
+
+}
+.breadCrumbsList{
+	list-style: none;
+	text-align: center;
+}
+.breadCrumbsList li{
+	margin-bottom: 5px;
+	border-bottom: 1px dotted white;
+	width: 80%;
+}
+.breadCrumbsList li:last-child{
+	border-bottom: none;
+}
+.breadCrumbsList a{
+	color: white;
+	font-size: 20px;
+}
+.breadCrumbsIcon {
+	width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 5;
+    top: 30px;
+    right: 10px;
+    background-image: url('Images/NavigationIcon.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+}
+
 .HomeContent{
 	width:42.85%;
 	min-width: 585px;
@@ -123,7 +181,9 @@ body, html{
 #logofiller{
 	height: 20%;
 }
-
+#scrollToLearnMore {
+	font-size: 20px;
+}
 #mainLogo{
 	position: relative;
 	width: auto;
@@ -155,11 +215,14 @@ body, html{
 
 /*EVENT PAGE CSS*/
 
-
+.events {
+	min-height: 500px;
+}
 #eventslide{
 	margin-top: 5%;
 	width: 100%;
-	height: 68.68%;
+	height: 75%;
+	min-height: 390px;
 	/*border: 1px solid blue;*/
 	overflow: hidden;
 }
@@ -197,6 +260,10 @@ vertical-align: top;
 .eInfo{
 	padding:6.89%;
 }
+.eButtonContainer {
+	margin-bottom: 8%; 
+	width: 100%;
+}
 .eButton{
 	display: block;
 	position: relative;
@@ -233,7 +300,10 @@ vertical-align: top;
 #aboutus{
 	min-height:650px;
 }
-#profileContainer1{
+#profileMobile {
+	display: none;
+}
+.profileContainer1{
 	height: 200px;
 	width: 200px;
 	position: relative;
@@ -241,7 +311,7 @@ vertical-align: top;
 	margin:  2.298% auto;
 	border: 1px solid white;
 }
-#profileContainer2{
+.profileContainer2{
 	height: 150px;
 	width: 824px;
 	/*width: 1052px;*/
@@ -282,19 +352,18 @@ vertical-align: top;
 }
 
 .profiletext{
-	width: 75%;
-	height: 75%;
-	padding-top: 20%;
+	height: 100%;
+	width: 100%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
 .profiletext p{
-		font-size: 1.4vw;
+		font-size: 18px;
 }
 .profileimage{
 	width: 150px;
-	height150px;
+	height: 150px;
     z-index: 2;   
     -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
     -webkit-transform: rotateY(0deg);  
@@ -304,7 +373,7 @@ vertical-align: top;
 
 .rotator{     
     width:150px;   
-    height: 150px;
+    height:150px;
 }
 .rotator2{
 	width: 200px;
@@ -392,8 +461,9 @@ input[type=submit] {
 	#logofiller{
 		height: 20%;
 	}
-	.divtxt{
-		font-size: 2.2vw;
+	.seperatorTxt{
+		font-size:22px;
+		margin: 0;
 	}
 	.centerevent{
 		width: 90%;
@@ -403,7 +473,20 @@ input[type=submit] {
 	display: none;
 }
 
-
+@media screen and (max-width: 850px){ /* FOR ALTERNATE ABOUT US PAGE*/
+	#profileMobile {
+		display: block;
+	}
+	#profileFull {
+		display: none;
+	}
+	.profileContainer2 {
+		width: 369px;
+	}
+	#aboutus {
+		height: auto;
+	}
+}
 
 @media screen and (max-width: 700px){   /* FOR MOBILE EVENTS PAGE*/
 	.arrow{
@@ -430,16 +513,19 @@ input[type=submit] {
 	}
 	.centerevent{
 		width: 40%;
+		min-width: 225px;
 	}
-
+	.seperatorTxt{
+		font-size:20px;
+	}
 
 }
 @media screen and (max-width: 600px){
 	p{
-		font-size: 4vw;
+		font-size: 12px;
 	}
-	.divtxt{
-		font-size: 2.8vw;
+	.seperatorTxt{
+		font-size:16px;
 	}
 	.HomeContent{
 		padding: 0 0 0 0;

@@ -64,6 +64,37 @@ $(document).ready(function(){
 			}		
 
 	});
+	$('.breadCrumbsIcon').click(function (){
+		if (! $('.breadCrumbsContainer').hasClass('breadCrumbsOpen')) {
+			$('.breadCrumbsContainer').toggleClass('breadCrumbsOpen');
+			$('.breadCrumbsContent, .breadCrumbsIcon').animate({
+				top: '+=150px'
+			}, {
+				duration: 1300,
+				easing : "easeOutQuint"
+			});
+			$('body').animate({
+				'margin-top': '+=150px'
+			}, {
+				duration: 1300,
+				easing : "easeOutQuint"
+			});
+		} else {
+			$('.breadCrumbsContainer').toggleClass('breadCrumbsOpen');
+			$('.breadCrumbsContent, .breadCrumbsIcon').animate({
+				top: '-=150px'
+			}, {
+				duration: 1300,
+				easing : "easeOutQuint"
+			});
+			$('body').animate({
+				'margin-top': '-=150px'
+			}, {
+				duration: 1300,
+				easing : "easeOutQuint"
+			});
+		}
 
+	});
 
 });
