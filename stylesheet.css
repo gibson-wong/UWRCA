@@ -523,7 +523,10 @@ input[type=submit] {
 }
 @media screen and (max-width: 600px){
 	p{
-		font-size: 12px;
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 28px;
 	}
 	.seperatorTxt{
 		font-size:16px;
@@ -541,6 +544,25 @@ input[type=submit] {
 	.bgimg{
 		min-height: 500px;
 	}
+	#formcontainer {
+		width: 80%;
+	}
+	.inputBox {
+		height: 20px;
+	}
+	.inputBox[type="text"], .textBox[type="text"], .inputBox[type="email"]
+	{
+	    font-size:14px;
 
+	}
+	.submit {
+		height: 28px;
+	}
+	input[type=submit] {
+	padding: 1px 20px;
+    font-size: 17px;
+	}
 }
+
+
 
