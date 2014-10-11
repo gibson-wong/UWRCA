@@ -174,7 +174,8 @@ body, html{
 	min-width: 585px;
 	min-height: 600px;
 	position: relative;
-	margin-left: 4.54%;
+	/*margin-left: 4.54%;*/
+	margin: auto;
 	height: 92.157%;
 	background-color: white;
 }
