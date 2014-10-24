@@ -1,0 +1,116 @@
+ html{
+  background: url(../Images/Scavenger/ccsh-bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face
+{
+	font-family: myriad;
+	src: url(../myriad-pro/MYRIADPRO-REGULAR.otf);
+
+}
+@font-face
+{
+	font-family: myriadBold;
+	src: url(../myriad-pro/MYRIADPRO-BOLD.otf);
+
+}
+@font-face
+{
+	font-family: opensans;
+	src: url(../open-sans/OpenSans-Light.ttf)
+}
+@font-face
+{
+	font-family: opensansreg;
+	src: url(open-sans/OpenSans-Regular.ttf)
+}
+@font-face
+{
+	font-family: opensansbold;
+	src: url(../open-sans/OpenSans-Bold.ttf)
+}
+@font-face
+{
+	font-family: simplifica;
+	src: url(open-sans/OpenSans-Light.ttf)
+}
+
+p, a{
+
+	font-family: opensans;
+	font-size: 1.8vw;
+
+}
+h1{
+	text-align: center;
+	font-family: opensansbold;
+	font-size: 2.5vw;
+}
+header{
+	text-align: center;
+	font-family: opensans;
+	font-size: 48px;
+	color: white;
+}
+
+
+#rules{
+	margin:0 auto; 
+	display:block; 
+	postion: relative; 
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width:100px; 
+	height: 30px;
+	border: 2px solid white;
+	text-align: center;
+}
+#arrowcont{
+	margin: 0 auto;
+/*	border: 1px solid red;*/
+	padding: 0 0 0 0;
+	width: 800px;
+	height: 100%;
+}
+#main{
+	width:100%;
+	height: 400px;
+}
+#container{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid blue;*/
+	overflow: hidden;
+}
+#slider{
+	position: relative;
+		display: block;
+	width: 1000%;
+	height: 100%;
+
+}
+.slide{
+	width: 10%;    /* Since there are two slides, we're making the view half of eventholder's width, ie 100/2*/
+	height: 100%;
+	float: left;
+
+}
+
+.arrow{		
+	display: inline;
+	cursor: pointer;
+	position: relative;
+	float: right;
+	top: 200px;
+	z-index: 10;
+	/*width: 1.831501832%;*/
+}
+#Rarrow #Larrow{
+	position: relative;
+	display: inline;
+}

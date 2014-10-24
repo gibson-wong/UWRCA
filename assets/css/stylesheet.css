@@ -1,0 +1,568 @@
+@font-face
+{
+	font-family: myriad;
+	src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.otf);
+
+}
+@font-face
+{
+	font-family: myriadBold;
+	src: url(../fonts/myriad-pro/MYRIADPRO-BOLD.otf);
+
+}
+@font-face
+{
+	font-family: opensans;
+	src: url(../fonts/open-sans/OpenSans-Light.ttf)
+}
+@font-face
+{
+	font-family: opensansreg;
+	src: url(../fonts/open-sans/OpenSans-Regular.ttf)
+}
+@font-face
+{
+	font-family: opensansbold;
+	src: url(../fonts/open-sans/OpenSans-Bold.ttf)
+}
+@font-face
+{
+	font-family: simplifica;
+	src: url(../fonts/open-sans/OpenSans-Light.ttf)
+}
+
+p, a{
+	font-family: opensans;
+	font-size: 16px;
+}
+h1{
+	text-align: center;
+	font-family: opensans;
+	font-size: 36px;
+}
+.marginCenter {
+	margin: 0 auto;
+}
+.txtcenter{
+	text-align:center;
+}
+.seperatorTxt{
+		font-size:24px;
+		margin: 0;
+}
+.displayAsTable {
+	display: table;
+}
+.verticalAlignTable {
+	vertical-align: middle;
+	display: table-cell;
+}
+.noTxtDecoration {
+	text-decoration: none;
+}
+div .eMonth{
+	text-align: center;
+	font-size: 48px;
+	margin:0;
+
+}
+div .eDate{
+	text-align: center;
+	font-size: 48px;
+	margin: 0;
+	margin-top: -5.5%;
+}
+.efonts{
+	margin: 10px 0px 0px 0px;
+	font-size: 14px	
+}
+.whitefont{
+	color: white;
+	opacity: .5;
+}
+body, html{
+   height: 100%;
+   padding: 0;
+   margin: 0;
+}
+.whitecontainer{
+	height: 85.5%;
+	width: 100%;
+	background-color: white;
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+
+.cont{
+	height:100%;
+	width:100%;
+	
+}
+
+.bgimg{
+
+
+    min-height: 650px;  
+    height: 100%;
+	width:100%;
+	background-color: #252525;
+	position: relative;	
+	
+
+
+}
+.divider{
+	background-color: #cd2828;
+	width: 100%;
+	padding: 20px 0 20px 0;
+}
+.centerWrapper{
+	width: 80%;
+	padding: 0 10%;
+	margin: auto auto;
+
+}
+.stickyBottom {
+	position: absolute;
+	bottom: 0;
+}
+
+/* Bread Crumbs */
+.breadCrumbsContent {
+
+    width: 100%;
+    background-color: #cd2828;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 3px solid #B82424;
+    top: -150px;
+
+}
+.breadCrumbsList{
+	list-style: none;
+	text-align: center;
+}
+.breadCrumbsList li{
+	margin-bottom: 5px;
+	border-bottom: 1px dotted white;
+	width: 80%;
+}
+.breadCrumbsList li:last-child{
+	border-bottom: none;
+}
+.breadCrumbsList a{
+	color: white;
+	font-size: 20px;
+}
+.breadCrumbsIcon {
+	width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 5;
+    top: 30px;
+    right: 10px;
+    background-image: url('../images/NavigationIcon.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+}
+
+.HomeContent{
+	width:42.85%;
+	min-width: 585px;
+	min-height: 600px;
+	position: relative;
+	/*margin-left: 4.54%;*/
+	margin: auto;
+	height: 92.157%;
+	background-color: white;
+}
+#logofiller{
+	height: 20%;
+}
+#scrollToLearnMore {
+	font-size: 20px;
+}
+#mainLogo{
+	position: relative;
+	width: auto;
+	max-width: 78.8034188%;
+	height: auto;			
+	display: block;
+	
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#mouseimg {
+	position: relative;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	width: 4.615383%;
+}
+
+
+#mainpg-txt{
+	position: relative;
+	display: block;
+	margin-top:16.1%;
+
+
+}
+
+/*EVENT PAGE CSS*/
+
+.events {
+	min-height: 500px;
+}
+#eventslide{
+	margin-top: 5%;
+	width: 100%;
+	height: 75%;
+	min-height: 390px;
+	/*border: 1px solid blue;*/
+	overflow: hidden;
+}
+#eventholderfull{
+	width: 200%;
+	height: 100%;
+
+}
+.slide{
+	width: 50%;    /* Since there are two slides, we're making the view half of eventholder's width, ie 100/2*/
+	height: 100%;
+	float: left;
+
+}
+.eventtemplate
+{
+height:98.5%;
+/*width:26%;   use this for multiple slies*/
+width:35%;
+margin-right:9%;
+display: inline-block;
+border: 2px solid #c0c0c0;
+vertical-align: top;
+
+
+}
+.eventspacer{
+	height: 3.42%;
+}
+.eventcal{
+	height: 31.26%;
+	width: 100%;
+	
+}
+.eInfo{
+	padding:6.89%;
+}
+.eButtonContainer {
+	margin-bottom: 8%; 
+	width: 100%;
+}
+.eButton{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background-color: #2b2b2b;
+	height: 7%;
+	width: 45%;
+	vertical-align: middle;
+	line-height: 160%; 
+	text-align: center;
+}
+.centerevent{
+	display: block;
+	width: 68.5%;
+	height: 100%;
+	margin: 0 auto;
+}
+.arrow{	
+	
+	cursor: pointer;
+	display: none;
+	position: relative;
+	float: right;
+	top:30%;
+	z-index: 2;
+	width: 1.831501832%;
+}
+#Rarrow #Larrow{
+	width: 100%;
+	
+}
+
+/*ABOUT US*/
+#aboutus{
+	min-height:650px;
+}
+#profileMobile {
+	display: none;
+}
+.profileContainer1{
+	height: 200px;
+	width: 200px;
+	position: relative;
+	display: block;
+	margin:  2.298% auto;
+	border: 1px solid white;
+}
+.profileContainer2{
+	height: 150px;
+	width: 600px;
+	/*width: 1052px;*/
+	position: relative;
+	display: block;
+	margin:  2.298% auto;
+	/*border: 1px solid blue;*/
+}
+.imgcontainer
+{
+	width: 15.55209%;
+
+	display: inline-block;
+	position: absolute;
+
+}
+/*Below is used for the flipping animation*/
+
+.profileinfo, .profileimage{
+	cursor: pointer;
+	position: absolute;
+    -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
+    transition: transform 1s, z-index 0s 0.25s; 
+
+    
+}
+
+.profileinfo{
+	
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+   -webkit-transform: rotateY(180deg);   
+    transform: rotateY(180deg);
+    background-color: rgba(255,255,255,0.8);
+
+    
+}
+
+.profiletext{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.profiletext p{
+		font-size: 18px;
+}
+.profileimage{
+	width: 150px;
+	height: 150px;
+    z-index: 2;   
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    -webkit-transform: rotateY(0deg);  
+    transition: transform 1s, z-index 0s 0.25s; 
+    transform: rotateY(0deg);
+}
+
+.rotator{     
+    width:150px;   
+    height:150px;
+}
+.rotator2{
+	width: 200px;
+	height: 200px;
+}
+.rotator .profileinfo,.rotator2 .profileinfo  {
+    z-index: 2;
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    -webkit-transform: rotateY(0deg);  
+    transition: transform 1s, z-index 0s 0.25s; 
+    transform: rotateY(0deg);
+    
+}
+.rotator  .profileimage,.rotator2  .profileimage{
+    -webkit-transform: rotateY(180deg);   
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    transition: transform 1s, z-index 0s 0.25s; 
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+/*Contact Us*/
+#Contactus
+{
+	background: url(../images/ContactUsBG.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+#formcontainer
+{
+	width: 45%;
+	height: 80%;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+
+}
+#formcontainer p{
+	margin: 0 0 0 0;
+}
+.inputBox{
+	width: 100%;
+	height: 30px;
+}
+.textBox{
+	width: 100%;
+	height: 120px;
+}
+.inputBox[type="text"], .textBox[type="text"], .inputBox[type="email"]
+{
+    font-size:20px;
+    font-family: opensans;
+
+}
+input[type=submit] {
+	padding: 1px 20px;
+    cursor:pointer;
+    font-size:20px;
+    font-family: opensans;
+
+}
+
+
+
+@media screen and (max-width: 1050px){
+	.centerevent{
+		width: 85%;
+	}
+}
+@media screen and (max-width: 900px){
+	
+	.HomeContent{
+		position: absolute;
+		width:585px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;				
+		background-color: white;
+		
+
+	}
+	#logofiller{
+		height: 20%;
+	}
+	.seperatorTxt{
+		font-size:22px;
+		margin: 0;
+	}
+	.centerevent{
+		width: 90%;
+	}
+}
+#eventholdermobile{
+	display: none;
+}
+
+@media screen and (max-width: 850px){ /* FOR ALTERNATE ABOUT US PAGE*/
+	#profileMobile {
+		display: block;
+	}
+	#profileFull {
+		display: none;
+	}
+	.profileContainer2 {
+		width: 369px;
+	}
+	#aboutus {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 700px){   /* FOR MOBILE EVENTS PAGE*/
+	.arrow{
+		width: 5%;
+		display: block;
+	}
+	#eventholderfull{
+		display: none;
+	}
+	#eventholdermobile{
+		position: relative;
+		display: block;
+		width: 300%;
+		height: 100%;
+	}
+	.slidemobile{
+	width: 33.3333333%;    /* Since there are two slides, we're making the view half of eventholder's width, ie 100/2*/
+	height: 100%;
+	float: left;
+	}
+	.eventtemplate{
+		width: 100%;
+		margin-right: 0;
+	}
+	.centerevent{
+		width: 40%;
+		min-width: 225px;
+	}
+	.seperatorTxt{
+		font-size:20px;
+	}
+
+}
+@media screen and (max-width: 600px){
+	p{
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	.seperatorTxt{
+		font-size:16px;
+	}
+	.HomeContent{
+		padding: 0 0 0 0;
+		width: 100%;
+		min-width: 0;
+		top:0;
+		height: 100%;
+		background-color: white;
+		min-height: 0px;
+
+	}
+	.bgimg{
+		min-height: 500px;
+	}
+	#formcontainer {
+		width: 80%;
+	}
+	.inputBox {
+		height: 20px;
+	}
+	.inputBox[type="text"], .textBox[type="text"], .inputBox[type="email"]
+	{
+	    font-size:14px;
+
+	}
+	.submit {
+		height: 28px;
+	}
+	input[type=submit] {
+	padding: 1px 20px;
+    font-size: 17px;
+	}
+}
+
+
+
