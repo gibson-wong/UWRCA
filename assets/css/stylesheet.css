@@ -1,34 +1,34 @@
 @font-face
 {
 	font-family: myriad;
-	src: url(myriad-pro/MYRIADPRO-REGULAR.otf);
+	src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.otf);
 
 }
 @font-face
 {
 	font-family: myriadBold;
-	src: url(myriad-pro/MYRIADPRO-BOLD.otf);
+	src: url(../fonts/myriad-pro/MYRIADPRO-BOLD.otf);
 
 }
 @font-face
 {
 	font-family: opensans;
-	src: url(open-sans/OpenSans-Light.ttf)
+	src: url(../fonts/open-sans/OpenSans-Light.ttf)
 }
 @font-face
 {
 	font-family: opensansreg;
-	src: url(open-sans/OpenSans-Regular.ttf)
+	src: url(../fonts/open-sans/OpenSans-Regular.ttf)
 }
 @font-face
 {
 	font-family: opensansbold;
-	src: url(open-sans/OpenSans-Bold.ttf)
+	src: url(../fonts/open-sans/OpenSans-Bold.ttf)
 }
 @font-face
 {
 	font-family: simplifica;
-	src: url(open-sans/OpenSans-Light.ttf)
+	src: url(../fonts/open-sans/OpenSans-Light.ttf)
 }
 
 p, a{
@@ -163,7 +163,7 @@ body, html{
     z-index: 5;
     top: 30px;
     right: 10px;
-    background-image: url('Images/NavigationIcon.png');
+    background-image: url('../images/NavigationIcon.png');
     background-repeat: no-repeat;
     background-size: 40px;
     cursor: pointer;
@@ -399,7 +399,7 @@ vertical-align: top;
 /*Contact Us*/
 #Contactus
 {
-	background: url(Images/ContactUsBG.png) no-repeat center center;
+	background: url(../images/ContactUsBG.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -523,7 +523,10 @@ input[type=submit] {
 }
 @media screen and (max-width: 600px){
 	p{
-		font-size: 12px;
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 28px;
 	}
 	.seperatorTxt{
 		font-size:16px;
@@ -541,6 +544,25 @@ input[type=submit] {
 	.bgimg{
 		min-height: 500px;
 	}
+	#formcontainer {
+		width: 80%;
+	}
+	.inputBox {
+		height: 20px;
+	}
+	.inputBox[type="text"], .textBox[type="text"], .inputBox[type="email"]
+	{
+	    font-size:14px;
 
+	}
+	.submit {
+		height: 28px;
+	}
+	input[type=submit] {
+	padding: 1px 20px;
+    font-size: 17px;
+	}
 }
+
+
 
