@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-	//FORM
-
-
     // SLIDES 
 
 	var $totalMslides = 0; 		/*total up to 3 slides for the mobile events page*/
@@ -102,3 +99,5 @@ $(document).ready(function(){
 	});
 
 });
+
+

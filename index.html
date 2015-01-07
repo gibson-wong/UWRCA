@@ -6,9 +6,10 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
 		<script type="text/javascript" src='src/script.js'></script>
 		<script type="text/javascript" src='src/scroll-script.js'></script>
-		<script src="http://www.websitecodetutorials.com/code/jquery-plugins/validation.js"></script>
+		<script type="text/javascript" src='src/email-form-validation.js'></script>
 </head>
 <body>
 
@@ -254,7 +255,7 @@
 	</div>
 	<div class="whitecontainer" id="Contactus">
 		<h1 style="margin: 0 0 0 0; color:#EBEBE0;">CONTACT US</h1>
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 	        $(document).ready(function(){
 	            $("#emailForm").submit( function () {
 				$.post(
@@ -267,7 +268,7 @@
 	              return false;   
 	            });   
 	        });
-		</script>
+		</script>-->
 
 		<div style="width: 100%; height: 5%; display:block"></div>
 
@@ -285,7 +286,7 @@
 			</form>	
 		</div>-->
 
-		<div id="formcontainer">
+		<div id="formcontainer" name="formcontainer">
 			<p style="color:white;">Are you interested in joining us? Do you have any questions about our events or what we do? Feel free to leave us a message below!</p><br>
 			<form id="emailForm" method="get" action="">
 				<fieldset style="border: 0px solid blue; padding: 0 0 0 0">
@@ -307,26 +308,8 @@
 			    </fieldset>
 			</form>
 		</div>
-		<script>
-		$("#emailForm").validate();
-		$(".submit").click(function() {
-			if ($("#email").val() && $("#subject").val() && $("#message").val()) {
-				alert( "Your message has been sent. Thank you." );
-			}
-		});
-		</script>
-
-
 	</div>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-56027410-1', 'auto');
-			ga('send', 'pageview');
-	</script>
 </body>
 
 </html>
