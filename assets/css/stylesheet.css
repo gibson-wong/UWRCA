@@ -62,13 +62,13 @@ h1{
 }
 div .eMonth{
 	text-align: center;
-	font-size: 48px;
+	font-size: 60px;
 	margin:0;
 
 }
 div .eDate{
 	text-align: center;
-	font-size: 48px;
+	font-size: 55px;
 	margin: 0;
 }
 .efonts{
@@ -455,6 +455,9 @@ input[type=submit] {
 @media screen and (max-width: 1050px){
 	.centerevent{
 		width: 85%;
+	}
+	div .eMonth, div .eDate{
+		font-size: 48px;
 	}
 }
 @media screen and (max-width: 900px){
