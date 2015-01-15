@@ -73,7 +73,10 @@ div .eDate{
 }
 .efonts{
 	margin: 10px 0px 0px 0px;
-	font-size: 14px	
+	font-size: 20px;	
+}
+.eTitle {
+	font-size: 22px !important;
 }
 .whitefont{
 	color: white;
@@ -221,7 +224,7 @@ body {
 /*EVENT PAGE CSS*/
 
 .events {
-	min-height: 500px;
+	min-height: 725px;
 }
 #eventslide{
 	margin-top: 5%;
@@ -258,7 +261,9 @@ position: relative;
 	height: 3.42%;
 }
 .eventcal{
-	height: 31.26%;
+	/*height: 31.26%;*/
+	padding-top: 5%;
+	padding-bottom: 5%;
 	width: 100%;
 	
 }
@@ -279,6 +284,7 @@ position: relative;
 	vertical-align: middle;
 	line-height: 160%; 
 	text-align: center;
+	padding: 7px 0px;
 }
 .centerevent{
 	display: block;
@@ -450,14 +456,31 @@ input[type=submit] {
 
 }
 
+@media screen and (max-width: 1280px){
 
+	.efonts {
+		font-size: 18px;
+	}
+	.eTitle {
+		font-size: 20px !important;
+	}
+}
 
 @media screen and (max-width: 1050px){
 	.centerevent{
 		width: 85%;
 	}
+	.events {
+		min-height: 625px;
+	}
 	div .eMonth, div .eDate{
 		font-size: 48px;
+	}
+	.efonts {
+		font-size: 14px;
+	}
+	.eTitle {
+		font-size: 16px !important;
 	}
 }
 @media screen and (max-width: 900px){
