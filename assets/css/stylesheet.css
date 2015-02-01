@@ -282,9 +282,9 @@ body {
 .eventtemplate
 {
 height:98.5%;
-/*width:26%;   use this for multiple slies*/
-width:35%;
-margin-right:9%;
+width:30%;     /*use this for multiple slies*/
+/*width:35%;*/
+margin-right:4%;
 display: inline-block;
 border: 2px solid #c0c0c0;
 vertical-align: top;
